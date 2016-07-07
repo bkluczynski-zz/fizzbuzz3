@@ -1,19 +1,11 @@
-def fizzbuzz3(number)
+def fizzbuzz(number)
 
-
-  if number%3 == 0 && number%5 == 0
-    return "fizzbuzz"
-  end
-
-  if number%3 == 0
-    return "fizz"
-  end
-
-  if number%5 == 0
-    return "buzz"
-  end
-
-
-
+case
+when number%15 == 0 then "fizzbuzz"
+when number%5 == 0 then "buzz"
+when number%3 == 0 then "fizz"
+else
+  number
+end
 
 end
